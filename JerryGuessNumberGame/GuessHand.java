@@ -1,3 +1,9 @@
+/*
+ **题目：玩家与电脑进行猜拳游戏，玩家行为采用输入方式，电脑行为采用随机形式。
+ **姓名：周吉瑞 20190521340
+ **时间：2020/10/30
+ */
+
 package cxtc.jk03;
 import java.util.Scanner;
 import  java.util.Random;
