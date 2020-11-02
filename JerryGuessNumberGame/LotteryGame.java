@@ -11,17 +11,17 @@ import java.util.Scanner;
 import  java.util.Random;
 
 public class LotteryGame {
-    static int aiLotteryNumber[] = new int[7];      //全局数组：用于储存机器的随机号码
-    static int usLotteryNumber[] = new int[7];      //全局数字：用于储存用户的所选号码
+
+    static int[] aiLotteryNumber = new int[7];      //全局数组：用于储存机器的随机号码
+    static int[] usLotteryNumber = new int[7];      //全局数字：用于储存用户的所选号码
     static int numberOfBets = 0;                    //全局整型：用于储存下注数量
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         while (true) {                              //死循环
             gameInterface();                        //绘制界面
 
-            if  (selectMenu() == false) {           //选择菜单，若返回false那么退出系统
+            if  (!selectMenu()) {           //选择菜单，若返回false那么退出系统
                 System.out.println();
                 System.out.println("已退出双色球彩票系统，谢谢使用！");
                 break;
@@ -103,7 +103,6 @@ public class LotteryGame {
     public static void winningStatistics() {
         int redCount = 0;
         int greenCount = 0;
-        int oneBonus = 0;
 
         for (int i = 1; i <= 5; i++) {
             if (aiLotteryNumber[i] == usLotteryNumber[i]) {
@@ -155,7 +154,7 @@ public class LotteryGame {
     }//handPickNumber()
 
     //机选号码函数
-    public static void machineSelectedNumber(int lotteryNumber[]) {
+    public static void machineSelectedNumber(int[] lotteryNumber) {
         Random random = new Random();
 
         for (int i = 0; i <= 5; i++) {
