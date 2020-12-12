@@ -20,7 +20,7 @@ class Rectangle {
 class Cuboid extends Rectangle {
     double height;
 
-    Cuboid(){
+    Cuboid() {
     }
 
     Cuboid(double length, double width, double height) {
@@ -42,6 +42,6 @@ class Cuboid extends Rectangle {
 public class HomeWork01 {
     public static void main(String[] args) {
         Cuboid c1 = new Cuboid(2, 3, 4);
-        System.out.println("Bottom area is:" + c1.bottomArea() + ", " + "Cuboid is:" + c1.volume());
+        System.out.println("Bottom area is:" + c1.bottomArea() + ", " + "Cuboid is" + c1.volume());
     }
 }

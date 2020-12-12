@@ -1,7 +1,5 @@
 package cxtc.jk03;
 
-import java.util.Timer;
-
 class NonMotorVehicle {
     public String brand;
     public String colour;

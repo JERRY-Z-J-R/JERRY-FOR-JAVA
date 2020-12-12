@@ -39,7 +39,7 @@ class Human {
     }
 
     public void learning() {
-        System.out.println("Human learning……");
+        System.out.println("Human learning......");
     }
 }
 
@@ -65,7 +65,7 @@ class Pupil extends Human {
     }
 
     public void learning() {
-        System.out.println("Pupil learning……");
+        System.out.println("Pupil learning......");
     }
 }
 
@@ -81,7 +81,7 @@ class Student extends Pupil {
     }
 
     public void learning() {
-        System.out.println("Student learning……");
+        System.out.println("Student learning......");
     }
 
     public void listAttributes() {
@@ -89,9 +89,8 @@ class Student extends Pupil {
     }
 }
 
-
 public class HomeWork02 {
-    public static void main(String[] ags) {
+    public static void main(String[] args) {
         Student jerry = new Student("jerry", "male", 20, 40);
         Student dragon = new Student("dragon", "Female", 19, 24);
         jerry.learning();
